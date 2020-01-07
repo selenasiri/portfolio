@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 
 const Bio = () => {
+  // https://reactjs.org/docs/hooks-state.html
   const [displayBio, setDisplayBio] = useState(false);
 
   const toggleDisplayBio = () => {
-    console.log('HHHHH');
-
-    setDisplayBio(prev => !prev);
+    setDisplayBio(displayBio => !displayBio);
   };
 
   return (

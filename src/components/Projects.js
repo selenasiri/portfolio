@@ -1,6 +1,6 @@
 import React from 'react';
 import PROJECTS from '../data/projects';
-import Project from './Project';
+import ProjectItem from './ProjectItem';
 
 const Projects = () => {
   return (
@@ -8,7 +8,7 @@ const Projects = () => {
       <h2>Highlighted Projects</h2>
       <div>
         {PROJECTS.map(PROJECT => {
-          return <Project key={PROJECT.id} project={PROJECT} />;
+          return <ProjectItem key={PROJECT.id} project={PROJECT} />;
         })}
       </div>
     </div>
